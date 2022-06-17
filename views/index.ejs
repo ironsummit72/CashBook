@@ -1,22 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles/index.css">
-    <title>Cashbook</title>
-
-</head>
-<style>
-
-</style>
-<body>
-    <header> <%- include('./partials/header.ejs') %></header>
-    <div class="container">
-        
- 
-
-    </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>cashbook</title>
+  </head>
+  <body>
+    <header><%- include('./partials/header.ejs') %></header>
+    <section>
+      <div class="cashinfocard">
+        <div class="netbal">
+          <h6 class="txt fo">Net balance</h6>
+          <h6 class="fig fo">72,000</h6>
+        </div>
+        <hr />
+        <div class="cashin">
+          <h6 class="txt fo ci">Cash In +</h6>
+          <h6 class="fig fo ci">2,00,000</h6>
+        </div>
+        <div class="cashout">
+          <h6 class="txt fo co">Cash Out -</h6>
+          <h6 class="fig fo co">1,28,000</h6>
+        </div>
+      </div>
+      <div class="lists-section">
+        <ul class="list">
+          <li id="my-list">
+            <div class="list-design">
+              <div class="item-price">
+                <h4 class="item-name fo">Galaxy Buds Pro</h4>
+                <h5 class="price fo">7,590</h5>
+              </div>
+              <div class="bal-date">
+                <h6 class="datetime fnt">JUN 16 2022, 8:39</h6>
+                <div class="bal-info">
+                  <h5 class="baltext fnt">Balance</h5>
+                  <h6 class="balance fnt">72,000</h6>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+  <script src="./index.js"></script>
 </html>
