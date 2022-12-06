@@ -13,16 +13,26 @@
       <div class="cashinfocard">
         <div class="netbal">
           <h6 class="txt fo">Net balance</h6>
-          <h6 class="fig fo">72,000</h6>
+          <h6 class="fig fo">0</h6>
         </div>
         <hr />
         <div class="cashin">
           <h6 class="txt fo ci">Cash In +</h6>
-          <h6 class="fig fo ci">2,00,000</h6>
+          <h6 class="fig fo ci">0</h6>
         </div>
         <div class="cashout">
           <h6 class="txt fo co">Cash Out -</h6>
-          <h6 class="fig fo co">1,28,000</h6>
+          <h6 class="fig fo co">0</h6>
+        </div>
+        <div class="btnsection">
+          <button id="income" class="btn income">Income</button>
+          <button id="expense" class="btn expense">Expense</button>
+          <form class="field" id="amountfield" action="/" method="post">
+            <input type="text" name="remarks" id="remarks" placeholder="Remarks">
+            <input type="number" name="amount" id="amount" placeholder="Enter Amount">
+            <button class="ok" type="submit" id="ok">Ok</button>
+        </form>
+       
         </div>
       </div>
       <div class="lists-section">
@@ -46,5 +56,24 @@
       </div>
     </section>
   </body>
-  <script src="./index.js"></script>
+  <script>
+    let incomebtn = document.getElementById('income');
+    let expensebtn=document.getElementById('expense');
+    let okbtn=document.getElementById('ok');
+    let field = document.getElementById('amountfield');
+//when income btn pressed ok btn turns green 
+
+    incomebtn.addEventListener('click', function(){
+    okbtn.style.background='#00b900';
+    field.style.display='block';
+
+
+    });
+    //when expense btn pressed ok btn turns red
+    expensebtn.addEventListener('click', function(){
+      okbtn.style.background='red';
+       field.style.display='block';
+    })
+    
+  </script>
 </html>

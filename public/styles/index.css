@@ -60,9 +60,54 @@
   .ci {
     color: #00b900;
   }
+.btnsection {
+  display: flex;
+  height: 100px;
+  width: 170px;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 89%;
+  right: 10%;
+}
+.btn {
+  width: 45%;
+  height: 50%;
+  border: none;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.income {
+  background-color: #00b900;
+}
+
+.expense {
+  background-color: red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.field {
+  width: 200px;
+  position: absolute;
+  top: 90%;
+  left: 1%;
+  display:none;
+  
+}
+.ok{
+  color:white;
+  cursor: pointer;
+  
+}
   .lists-section {
     border: 2px solid black;
-    top: 39%;
+    top: 55%;
     position: absolute;
     width: 50vw;
     min-height: 100vh;
